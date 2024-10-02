@@ -1,0 +1,5 @@
+{
+  "scripts": {
+    "pullDB": "dotnet ef dbcontext scaffold \"Server=DESKTOP-RAQBS6C\\SQLEXPRESS; Database=EmployeeDB; Trusted_Connection=True; TrustServerCertificate=True\" Microsoft.EntityFrameworkCore.SqlServer --context-dir Persistence --context-namespace Infrastructure.Persistence --output-dir ../Domain/Entities --namespace Domain.Entities --no-onconfiguring -t Employee -t JobDepartment -t Leave -t Payroll -t Qualification -t Salary -t Users --force"
+  }
+}
